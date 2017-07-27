@@ -6,7 +6,29 @@ body{
 
 .login-form {
 	margin-top: 50vh;
-	height: 200px;
-	background-color: #FFF;
+	padding: 20px 30px;
+	background-color: rgba(0, 0, 0,.9);
+	color: #fff;
 	transform: translateY(-50%);
+}
+
+.login-form h1 {
+	margin: 0 0 5px;
+}
+
+.login-form h2 {
+	margin: 0 0 30px;
+	font-size: 1em;
+}
+
+@media (max-width: 600px) {
+	body {
+		background-image: url('https://unsplash.it/g/750/400?random');
+	}
+}
+
+@media (min-width: 600px) {
+	body {
+		background-image: url('https://unsplash.it/g/1500/800?random');
+	}
 }
