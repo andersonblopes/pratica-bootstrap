@@ -190,7 +190,7 @@
 
     	<footer class="row">
 	      <div class="col-sm-6">
-	        <button class="btn btn-primary">Nova Ordem de Serviço</button>
+	        <button class="btn btn-primary" data-toggle="modal" data-target="#NovaOS" >Nova Ordem de Serviço</button>
 	      </div>
 	      <div class="col-sm-6 paginacao text-right">
 	        <ul class="pagination">
@@ -205,6 +205,25 @@
 	      </div>
 	    </footer>
      </div>
+
+
+  	<div class="modal fade" id="NovaOS">
+		<div class="modal-dialog">
+	    	<div class="modal-content">
+	        	<div class="modal-header">
+	        		<h4 class="modal-title">Nova Ordem de Serviço</h4>
+	 	      	</div>
+	       		<form>
+	        		<div class="modal-body">
+	         		</div>
+	        		<div class="modal-footer">
+	        			<button type="reset" class="btn btn-danger">Limpar</button>
+	           			<button type="submit" class="btn btn-primary">Salvar</button>
+	         		</div>
+	       		</form>
+	    	</div>
+		</div>
+	</div> 
 
   <script src="js/jquery-2.2.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
