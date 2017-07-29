@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Utilizando collapse</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"   data-target="#menu">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="index.html" class="navbar-brand logotipo">
+          <img src="img/watchguru.png" alt="Watch Guru">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="nav navbar-nav">
+         <li><a href="">Ordens de Serviço</a></li>
+         <li><a href="">Clientes</a></li>
+         <li><a href="">Funcionários</a></li>
+         <li><a href="">Serviços</a></li>
+       </ul>
+
+       <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            Minha Conta
+            <span class="caret"></span>
+          </a>
+          <div class="dropdown-menu perfil">
+            <div class="col-sm-4 hidden-xs">
+              <img class="img-responsive img-rounded" src="https://api.adorable.io/avatars/100/watchuru.png">
+            </div>
+            <ul class="list-unstyled">
+              <li>Anderson Lopes</li>
+              <li><a href="">Alterar Perfil</a></li>
+              <li><a href="login.html">Sair</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <ol class="breadcrumb">
+    <li><a href="login.html">Início</a></li>
+    <li><a href="index.html">Ordens de Serviço</a></li>         
+    <li><a href="navegacao-em-abas.html">Navegação em Abas</a></li>      
+    <li class="active">Accordiom com collapse</li>
+  </ol>
+
+  <h1>Usando o Collapse</h1>
+
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a href="#PainelUm" data-toggle="collapse" data-parent="#accordion">Painel Um</a>
+        </h4>
+      </div>
+      <div class="panel-collapse collapse in" id="PainelUm">
+        <div class="panel-body">
+          <p>
+            Mussum Ipsum, cacilds vidis litro abertis. Quem num gosti di mum que vai caçá sua turmis! Cevadis im ampola pa arma uma pindureta. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a href="#PainelDois" data-toggle="collapse" data-parent="#accordion">Painel Dois</a>
+        </h4>
+      </div>
+      <div class="panel-collapse collapse" id="PainelDois">
+        <div class="panel-body">
+          <p>
+            Mussum Ipsum, cacilds vidis litro abertis. Quem num gosti di mum que vai caçá sua turmis! Cevadis im ampola pa arma uma pindureta. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a href="#PainelTres" data-toggle="collapse" data-parent="#accordion">Painel Três</a>
+        </h4>
+      </div>
+      <div class="panel-collapse collapse" id="PainelTres">
+        <div class="panel-body">
+          <p>
+            Mussum Ipsum, cacilds vidis litro abertis. Quem num gosti di mum que vai caçá sua turmis! Cevadis im ampola pa arma uma pindureta. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
