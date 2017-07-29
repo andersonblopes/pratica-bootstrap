@@ -190,7 +190,7 @@
 
     	<footer class="row">
 	      <div class="col-sm-6">
-	        <button class="btn btn-primary" data-toggle="modal" data-target="#NovaOS" >Nova Ordem de Serviço</button>
+	        <button class="btn btn-primary" data-backdrop="static" data-toggle="modal" data-target="#NovaOS" >Nova Ordem de Serviço</button>
 	      </div>
 	      <div class="col-sm-6 paginacao text-right">
 	        <ul class="pagination">
@@ -215,7 +215,48 @@
 	 	      	</div>
 	       		<form>
 	        		<div class="modal-body">
-	         		</div>
+			            <div class="row">
+			              <div class="form-group col-xs-12">
+			                <label>Código da OS</label>
+			                <p class="form-control-static">65151</p>
+			              </div>
+			            </div>
+		            	<div class="row">
+			              <div class="form-group col-sm-5">
+			                <label for="Cliente">Cliente</label>
+			                <select id="Cliente" class="form-control">
+			                  <option value="">Selecione...</option>
+			                  <option value="1">Frodo Bolseiro</option>
+			                  <option value="2">Gandalf Cinzento</option>
+			                  <option value="3">Sauron de Mordor</option>
+			                </select>
+			              </div>
+			              <div class="form-group col-sm-7">
+			                <label for="Servicos">Serviços</label>
+			                <select id="Servicos" class="form-control">
+			                  <option value="">Selecione...</option>
+			                  <option value="1">Ajuste de Data/Hora</option>
+			                  <option value="2">Conserto de Engrenagem</option>
+			                  <option value="3">Troca de Bateria</option>
+			                </select>
+			              </div>
+			            </div>
+			            <div class="row">
+			              <div class="form-group col-xs-12">
+				            <label for="Observacao">Observação</label>
+			    	        <textarea id="Observacao" class="form-control" rows="3"></textarea>
+			              </div>
+		            	</div>
+		            	<div class="row">
+			              <div class="form-group col-sm-4">
+			                <label for="Valor">Valor</label>
+			                <div class="input-group">
+			                  <div class="input-group-addon">R$</div>
+			                  <input type="text" name="valor" id="Valor" placeholder="0,00" class="form-control text-right">
+			                </div>
+			              </div>
+			            </div>
+			          </div>
 	        		<div class="modal-footer">
 	        			<button type="reset" class="btn btn-danger">Limpar</button>
 	           			<button type="submit" class="btn btn-primary">Salvar</button>
