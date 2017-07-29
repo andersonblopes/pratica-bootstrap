@@ -1,3 +1,4 @@
+// Faz o alert ir desaparecendo com fade
 jQuery(document).ready(function(){
 	$('[data-toggle="tooltip"').tooltip();
 });
@@ -5,11 +6,18 @@ jQuery(document).ready(function(){
 var t = 5000; // Tempo em milésimos
 
 setTimeout(function() {
-    $('.alert').fadeOut(); // Faz o alert ir desaparecendo com fade
+    $('.alert').fadeOut();
 }, t);
 
+/*Ajusta fixação de componentes conforme altura do dispositivo.*/
 $('#menu').affix({
-  offset: {
-    top: $(window).height()
-  }
+	offset: {
+		top: $(window).height()
+	}
 }); 
+
+/*Fecha automaticamente calendário ao selecionar data.*/
+ $('[data-provide=datepicker]').datepicker({
+    format: 'dd/mm/yyyy',
+    autoclose: true
+  });
