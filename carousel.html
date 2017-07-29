@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Carousel</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+ <nav class="navbar navbar-inverse navbar-static-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"   data-target="#menu">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="index.html" class="navbar-brand logotipo">
+        <img src="img/watchguru.png" alt="Watch Guru">
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="nav navbar-nav">
+       <li><a href="">Ordens de Serviço</a></li>
+       <li><a href="">Clientes</a></li>
+       <li><a href="">Funcionários</a></li>
+       <li><a href="">Serviços</a></li>
+     </ul>
+
+     <ul class="nav navbar-nav navbar-right">
+      <li>
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+          Minha Conta
+          <span class="caret"></span>
+        </a>
+        <div class="dropdown-menu perfil">
+          <div class="col-sm-4 hidden-xs">
+            <img class="img-responsive img-rounded" src="https://api.adorable.io/avatars/100/watchuru.png">
+          </div>
+          <ul class="list-unstyled">
+            <li>Anderson Lopes</li>
+            <li><a href="">Alterar Perfil</a></li>
+            <li><a href="login.html">Sair</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+<div class="container">
+  <ol class="breadcrumb">
+    <li><a href="login.html">Início</a></li>
+    <li><a href="index.html">Ordens de Serviço</a></li>         
+    <li><a href="navegacao-em-abas.html">Navegação em Abas</a></li>      
+    <li><a href="collapse.html">Accordiom com collapse</a></li>    
+    <li><a href="fixando-elementos.html">Fixar elementos</a></li>    
+    <li class="active">Carrossel</li>         
+  </ol>
+
+  <h1>Criando um Carousel</h1>
+  <div id="Carrossel" class="carousel slide" data-ride="carousel" data-interval="1000">
+    <ol class="carousel-indicators">
+      <li data-target="#Carrossel" data-slide-to="0" class="active"></li>
+      <li data-target="#Carrossel" data-slide-to="1"></li>
+      <li data-target="#Carrossel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner carrossel-itens">
+      <div class="item active">
+        <img class="img-responsive img-rounded" src="https://unsplash.it/1280/720?random">
+        <div class="carousel-caption">
+          <h3>Slide Um</h3>
+          <p>Este é um slide muito bonito!</p>
+        </div>
+      </div>
+      <div class="item">
+        <img class="img-responsive img-rounded" src="https://unsplash.it/1279/720?random">
+        <div class="carousel-caption">
+          <h3>Slide Dois</h3>
+          <p>Este é um slide muito bonito!</p>
+        </div>
+      </div>
+      <div class="item">
+        <img class="img-responsive img-rounded" src="https://unsplash.it/1278/720?random">
+        <div class="carousel-caption">
+          <h3>Slide Três</h3>
+          <p>Este é um slide muito bonito!</p>
+        </div>
+      </div>
+    </div>
+    <a class="left carousel-control" href="#Carrossel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#Carrossel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div>
+</div>
+
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
